@@ -1,26 +1,25 @@
 import React from 'react'
 import{ CgMenuGridO} from 'react-icons/cg'
 import {BsArrowDownUp} from 'react-icons/bs'
+import Dash from './Dash'
+
 
 export default function Cards() {
   return (
     <div>
 
-        <div className="container-fluid">
+        <div className="container-fluid ">
 
-            <div className="row mt-3">
+            <div className="row mt-3   ">
             
-            
+          
 
-                <div className="col-md-2">
-                <button type="button" class="btn btn-primary rounded-5 px-4 ms-3">Filter</button>
-
+               
+                <div className="col-md-10 ">
+                <Dash/>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-2  ">
 
-                </div>
-                <div className="col-md-2">
-{/* Example single danger button */}
 <div className="btn-group">
   <button type="button" className="btn rounded-5 btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
    <BsArrowDownUp/> Sort by
@@ -33,7 +32,7 @@ export default function Cards() {
     <li><a className="dropdown-item" href="#">Separated link</a></li>
   </ul>
 </div>
-{/* Example single danger button */}
+
 <div className="btn-group ms-2">
   <button type="button" className="btn rounded-5 btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
   <CgMenuGridO/>

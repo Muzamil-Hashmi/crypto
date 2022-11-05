@@ -14,3 +14,106 @@ body{
     color: rgb(41, 133, 166) !important;
     
 }
+.sc-pyfCe{
+
+    background-color: #0b1426;
+    color: white !important;
+ 
+}
+.sc-pyfCe:hover{
+
+    background-color: #479ef671 !important;
+}
+.map{
+    background-color: #0b1426;
+}
+/////////////////////////////////////////
+/// 
+:root
+{
+    --offcanvas-with: 270px;
+    --topNavbarHeight:362px;
+  }
+  //scrollbar
+  ::-webkit-scrollbar{
+    width: 5px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #6B6D8C;
+  }
+  .sidebar {
+    .offcanvas-body{
+      height: 80vh;
+    overflow-y: scroll;
+    }
+    //   position: fixed;
+      // width: 25%;
+      width: var(--offcanvas-with) !important;
+    width: 270px !important;
+      // height: 500px;
+    height: 100% !important;
+      overflow-y: auto;
+      background-color: #0B1426;
+      padding: 16px 30px !important;
+      .sidebar_details{
+          .color{
+            background-color: #0B1426;
+            border-bottom: 1px solid #626973;
+          }
+          .body{
+            color: #fff;
+          }
+          .head_txt{
+            font-size: 18px;
+            font-weight: 500;
+          }
+          .list{
+            padding: 0%;
+            margin: 0%;
+            li{
+                list-style: none;
+                padding: 10px 16px;
+                a{
+                    text-decoration: none;
+                    font-size: 16px;
+                    color: #fff;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+          }
+          .price_txt{
+            input[type="text"]{
+                width: 40%;
+                border: none !important;
+                border-radius: 4px;
+                padding: 12px;
+            }
+          }
+      }
+       .css-i4bv87-MuiSvgIcon-root{
+        color: #fff !important;
+      }
+    }
+
+    .rcs_dotsSet{
+        display: none;
+    }
+    .fpTHfu{
+      background-color: #0B1426 !important;
+      height: auto !important;
+    }
+    .bOQEtf {
+      border-right: none !important;
+    }
+    .sidebar{
+      width: 230px !important;
+      position: fixed;
+      z-index: 1;
+      top: 20px;
+      left: 10px;
+      
+      overflow-x: hidden;
+      
+    }

@@ -5,6 +5,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Base from './component/layout/Base';
 import Home from './pages/Home';
+import Lion from './component/element/Lion';
 
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
    <Base>
    <Routes>
     <Route path='/' index element ={ <Home/>} />
+    <Route path='/lion' element ={ <Lion/>} />
+
    </Routes>
    
    </Base>
