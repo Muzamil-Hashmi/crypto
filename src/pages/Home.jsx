@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
 // import { Sidebar } from 'react-pro-sidebar'
+import {AiOutlineBars} from 'react-icons/ai'
 import  Sidebar from '../component/element/Sidebar'
 import Body from '../component/element/Body'
 import Cards from '../component/element/Cards'
@@ -25,11 +26,14 @@ export default function
     <div className="row">
     
       <div className="col-md-2">
-      <button className='btn  text-white mt-5  ms-5'>
-        Filter 
+      
+      <div style={{position: 'sticky' , top: '16px '}}>
+      <button className='btn  text-white mt-5    rounded-5 ms-5'>
+      <AiOutlineBars/>  Filter 
 
       </button>
       <Dash/>
+      </div>
       
       </div>
       <div className="col-md-9 ms-5">

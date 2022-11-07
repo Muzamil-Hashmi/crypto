@@ -7,6 +7,8 @@ import { MdOutlineVerified } from "react-icons/md";
 import {VscDebugBreakpointData} from "react-icons/vsc"
 import { useNavigate } from 'react-router-dom';
 import Lion from './Lion';
+import{ CgMenuGridO} from 'react-icons/cg'
+import {BsArrowDownUp} from 'react-icons/bs'
 const Mapfun = () => {
   const data = [
     {
@@ -82,11 +84,6 @@ const Mapfun = () => {
 // const navigate=useNavigate()
 // navigate('/lion',{show})
 const navigate = useNavigate();
-const component=(v)=>
-{
-  navigate("/lion", {state:v});
-}
-   
   
     
   return (
@@ -95,14 +92,35 @@ const component=(v)=>
         <div className="container">
             <div className="row align-items-stretch">
               <div className="col-md-12 text-end mb-3 ">
-                <button className='btn  text-white '><AiOutlineSwap/>SortBy</button>
-                <button className='  btn  mx-3 '><AiOutlineAppstore color='white '/> <AiOutlineAppstoreAdd color='white'/></button>
+              <div className="btn-group">
+  <button type="button" className="btn rounded-5 btn-danger fw-bold  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+   <BsArrowDownUp/> Sort by
+  </button>
+  <ul className="dropdown-menu fw-bold rounded-4">
+    <li><a className="dropdown-item fw-bold" href="#">Most Relevnet</a></li>
+    <li><a className="dropdown-item fw-bold" href="#">Recent Listed</a></li>
+    <li><a className="dropdown-item fw-bold" href="#">Newest</a></li>
+    <li><a className="dropdown-item fw-bold" href="#">Price high to low</a></li>
+    <li><a className="dropdown-item fw-bold" href="#">Price low to high</a></li>
+  </ul>
+</div>               <div className="btn-group ms-2">
+  <button type="button" className="btn rounded-5 btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  <CgMenuGridO/>
+  </button>
+  <ul className="dropdown-menu">
+    <li><a className="dropdown-item fw-bold" href="#"> img </a></li>
+    <li><a className="dropdown-item fw-bold" href="#">Another action</a></li>
+    <li><a className="dropdown-item fw-bold" href="#">Something else here</a></li>
+    <li><hr className="dropdown-divider " /></li>
+    <li><a className="dropdown-item fw-bold" href="#">Separated link</a></li>
+  </ul>
+</div>
 
               </div>
         {data.map((v,i)=>{
             return <>
             <div className="col-md-4 mb-4 " key={i}>
-                <div className={`card text-dark h-100 ` } onClick={ ( )=>   component(v) } >
+                <div className={`card text-dark h-100 ` } onClick={ ( )=>   navigate('/lion', {state: v}) } >
                 <div className="card-body">
                        
                        <img
