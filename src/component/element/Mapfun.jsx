@@ -3,6 +3,7 @@ import { AccordionButton } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { MdOutlineVerified } from "react-icons/md";
+ import{AiOutlineSwap,AiOutlineAppstore,AiOutlineAppstoreAdd } from 'react-icons/ai'
 import {VscDebugBreakpointData} from "react-icons/vsc"
 import { useNavigate } from 'react-router-dom';
 import Lion from './Lion';
@@ -93,6 +94,11 @@ const component=(v)=>
     <div className=' py-5' >
         <div className="container">
             <div className="row align-items-stretch">
+              <div className="col-md-12 text-end mb-3 ">
+                <button className='btn  text-white '><AiOutlineSwap/>SortBy</button>
+                <button className='  btn  mx-3 '><AiOutlineAppstore color='white '/> <AiOutlineAppstoreAdd color='white'/></button>
+
+              </div>
         {data.map((v,i)=>{
             return <>
             <div className="col-md-4 mb-4 " key={i}>

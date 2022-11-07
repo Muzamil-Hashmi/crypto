@@ -38,6 +38,7 @@ let sliderBoxStyle = {
   height: "250px"
   //, width: "200px"
   , background: "tranparent"
+  
 };
 
 let itemsStyle = {
@@ -54,6 +55,7 @@ let textBoxStyle = {
   , background: "transparent"
   , fontSize: "36px"
   , fontWeight: 300
+  ,Scale:"1.1"
 };
 
 let buttonSetting = {
@@ -87,7 +89,7 @@ export default function Hero() {
           <h6 className=''>see All</h6>
 
           </div>
-          <CarouselSlider
+          <CarouselSlider className="collection"
     slideItems={data}
     manner={manner}
     buttonSetting={buttonSetting}

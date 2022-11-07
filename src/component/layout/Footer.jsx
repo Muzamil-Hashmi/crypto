@@ -1,6 +1,5 @@
 import React from 'react'
-import {AiFillTwitterCircle} from 'react-icons/ai';
-import {AiFillLinkedin} from 'react-icons/ai';
+import {AiFillTwitterCircle,AiOutlineLinkedin,AiOutlineInstagram} from 'react-icons/ai';
 
 
 function Footer() {
@@ -12,9 +11,9 @@ function Footer() {
 
   <div className="col-md-6">
 
-  <AiFillTwitterCircle size={30} color="blue" />
-  <AiFillTwitterCircle size={30} color="blue" />
-  <AiFillTwitterCircle size={30} color="blue" />
+  <AiFillTwitterCircle size={20}  />
+  <AiOutlineInstagram size={20} />
+  <AiOutlineLinkedin size={20}  />
   
   <div className='style9 '>© 2022 Quant Network Limited. All rights reserved</div>
   </div> 

@@ -57,7 +57,7 @@ body{
       padding: 16px 30px !important;
       .sidebar_details{
           .color{
-            background-color: #0B1426;
+            background-color: transparent !important;
             border-bottom: 1px solid #626973;
           }
           .body{
@@ -116,4 +116,19 @@ body{
       
       overflow-x: hidden;
       
+    }
+    .canvous{
+
+      height: auto;
+      width: auto !important;
+      
+    }
+    .btn-close{
+      color: white !important;
+    }
+    .collection{
+      scale:1.1 !important;
+    }
+    .sidebar{
+      background-color: transparent !important;
     }

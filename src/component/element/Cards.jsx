@@ -2,6 +2,7 @@ import React from 'react'
 import{ CgMenuGridO} from 'react-icons/cg'
 import {BsArrowDownUp} from 'react-icons/bs'
 import Dash from './Dash'
+import  Sidebar  from './Sidebar'
 
 
 export default function Cards() {
@@ -16,7 +17,7 @@ export default function Cards() {
 
                
                 <div className="col-md-10 ">
-                <Dash/>
+                <Dash />
                 </div>
                 <div className="col-md-2  ">
 

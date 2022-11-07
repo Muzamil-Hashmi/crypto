@@ -7,7 +7,7 @@ export default function Base(props) {
     <>
     <Header />
     {props.children};
-    {/* <Footer /> */}
+    <Footer />
     
     </>
   )
